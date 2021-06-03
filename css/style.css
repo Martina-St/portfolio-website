@@ -1,6 +1,7 @@
 /*
 Colors used:
 Primary Color (yellow): #ffe356;
+Soft yellow: #fffae2
 Secondary Color (coral red): #ef6367;
 Copy Color (soft black): #4d4d4d;
 Not so clean white: #fafafa
@@ -50,6 +51,7 @@ img {
   width: 100%;
 }
 
+/* =================Links and Buttons=================== */
 a {
   color: #ef6367;
   /* coral red */
@@ -80,13 +82,13 @@ a:active {
 .button {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #ef6367;
+  background-color: #ffe356;
   color: #fafafa;
   /* needed to override the default link color */
   font-weight: 400;
   padding: 8px;
   border-radius: 4px;
-  border-bottom: 2px solid #B74C4F;
+  border-bottom: 2px solid #E3C841;
   /* width of the border, type, color */
   transition: 0.2s opacity;
 }
@@ -109,81 +111,92 @@ a:active {
   color: #fafafa;
 }
 
-/* Layout styling */
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
 
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 24px;
+  text-transform: lowercase;
+  font-weight: 400;
+  color: #4d4d4d;
+}
+
+nav>ul>li>a:visited {
+  padding: 0 24px;
+  text-transform: lowercase;
+  font-weight: 400;
+  color: #4d4d4d;
+}
+
+nav>ul>li>a:hover, nav>ul>li>a:focus {
+  padding: 0 24px;
+  text-transform: lowercase;
+  font-weight: 700;
+  color: #4d4d4d;
+}
+
+nav>ul>li>a:active {
+  padding: 0 24px;
+  text-transform: lowercase;
+  font-weight: 700;
+  color: #4d4d4d;
+}
+
+/* =================Layout Styling=================== */
 .container {
   padding: 0 16px;
 }
 
 .row {
-  margin: 40px 0; /* 40px top and bottom, 0 left and right */
+  margin: 40px 0;
+  /* 40px top and bottom, 0 left and right */
   border-bottom: 2px solid: #4d4d4d
 }
 
-header {
-  background-color: #ffe356;
-  padding: 24px 16px 24px 16px;
-  margin: 0px auto;
-  border: 0px solid #F0D54D;
-  position: relative;
-  text-align: center;
-  box-shadow: 2px 2px 2px rgba(77, 77, 77, 0.20);
-  position: fixed
 
-}
 
 #hero h1 {
-  text-align: center; /* Centers text */
+  text-align: center;
+  /* Centers text */
 }
 
 .logo {
-  max-width: 250px;
-}
-
-nav > ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-nav > ul > li {
-  display: inline-block;
-}
-
-nav > ul > li > a {
-  padding: 0 24px;
-  text-transform: lowercase;
-  font-weight: 400;
-  color: #green;
-}
-
-nav > ul > li > a:visited {
-  padding: 0 24px;
-  text-transform: lowercase;
-  font-weight: 400;
-  color: #green;
-}
-
-nav > ul > li > a:hover, a:focus {
-  padding: 0 24px;
-  text-transform: lowercase;
-  font-weight: 700;
-  color: #green;
-}
-
-nav > ul > li > a:active {
-  padding: 0 24px;
-  text-transform: lowercase;
-  font-weight: 700;
-  color: #blue;
+  max-width: 120px;
 }
 
 #hero {
-  background-color: #ffe356;
-  padding: 20px 0;
+  background-color: #FFFAE2;
+  padding: 0px 0px 0px 0px;
   display: inline-block;
   width: 100%;
 }
 
+/* =================Header Main Footer=================== */
+
+header {
+  background-color: #fffae2;
+  padding: 0px 0px 0px 0px;
+  margin: 0px auto;
+  text-align: center;
+  box-shadow: 2px 2px 2px rgba(77, 77, 77, 0.20);
+  position: fixed;
+  width: 100%;
+}
+
+footer {
+  background-color: #fffae2;
+  padding: 0px 0px 0px 0px;
+  margin: 0px auto;
+  text-align: center;
+  width: 100%;
+}
+
 main {
-  padding-top: 158px;
+  padding-top: 184px;
 }
