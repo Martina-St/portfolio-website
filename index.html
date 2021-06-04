@@ -14,7 +14,7 @@
 <body>
   <header id="header">
     <div class="container">
-    <img class="logo" src="img/logo_notthefinaloneyet.svg" alt="martina logo">
+      <img class="logo" src="img/logo_notthefinaloneyet.svg" alt="martina logo">
       <nav>
         <ul>
           <li><a href="index.html">Work</a></li>
@@ -24,11 +24,11 @@
       </nav>
     </div>
   </header>
-  <main>
+  <main id="top">
     <div id="hero">
       <div class="container">
-        <h1>Hi, my name is Martina! <span>I am a Junior UI Designer from Berlin</span></h1>
-        <p>I am a Junior UI Designer from Berlin with a keen eye for detail and a lot of love for well-structured processes. I want to design interfaces that benefit users with straightforward flows and real value to their lives.
+        <h1>Hi, my name is Martina! <span>I am a UI Designer from Berlin</span></h1>
+        <p>I am a UI Designer from Berlin with a keen eye for detail and a lot of love for well-structured processes. I want to design interfaces that benefit users with straightforward flows and real value to their lives.
         </p>
       </div>
     </div>
@@ -36,33 +36,34 @@
       <div class="container">
         <h2>My Work</h2>
         <div class="row">
-          <div>
+          <div class="column col-md-6 col-lg-7">
             <picture>
               <source srcset="img/meetme/meetme_homepage@1.jpg" media="(max-width:767px)">
               <img src="img/meetme/meetme_homepage@2.jpg" alt="MeetMe">
             </picture>
           </div>
-          <div>
+          <div class="column col-md-6 col-lg-5">
             <h3>MeetMe</h3>
             <p>MeetMe is an app that helps you to find locations where you can take your date out in Berlin. I came up with the idea for this app, designed the UI and conducted interviews and user tests.</p>
             <a href="meetme.html" class="button">Read more</a>
           </div>
         </div>
         <div class="row">
-          <div>
+          <div class="column col-md-6 col-lg-7">
             <picture>
               <source srcset="img/mindfulmorning/mindfulmorning_homepage@1.jpg" media="(max-width:767px)">
               <img src="img/mindfulmorning/mindfulmorning_homepage@2.jpg" alt="Mindful Morning">
             </picture>
           </div>
-          <div>
+          <div class="column col-md-6 col-lg-5">
             <h3>Mindful Morning</h3>
             <p>Mindful Morning is an alarm clock app with a special feature that encourages the user to start the day in a conscious and observant way. Besides the design for the UI, I also did user tests and designed the images.</p>
             <a href="mindfulmorning.html" class="button">Read more</a>
           </div>
-          <div>
-            <a href="#header">Go back to top</a>
-          </div>
+
+        </div>
+        <div>
+          <a class="backtotop" href="#top">Go back to top</a>
         </div>
       </div>
     </div>
@@ -89,8 +90,8 @@
             </g>
           </svg></a>
       </div>
-      <div>
-        <p> Copyright Martina Stegmaier 2021</p>
+      <div class="copyright">
+        <p>Copyright Martina Stegmaier 2021</p>
       </div>
     </div>
   </footer>

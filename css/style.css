@@ -13,7 +13,7 @@ Not so clean white: #fafafa
 body {
   background-color: #fafafa;
   font-family: 'Jost', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   /* Sets the font size to 16px */
   font-weight: 400;
   /* Sets the font weight to 300 */
@@ -53,10 +53,9 @@ img {
 
 /* =================Links and Buttons=================== */
 a {
-  color: #ef6367;
+  color: #4d4d4d;
   /* coral red */
   text-decoration: none;
-  /* No underlining */
 }
 
 a:visited {
@@ -123,26 +122,21 @@ nav>ul>li {
 nav>ul>li>a {
   padding: 0 24px;
   text-transform: lowercase;
-  font-weight: 400;
   color: #4d4d4d;
 }
 
 nav>ul>li>a:visited {
-  padding: 0 24px;
   text-transform: lowercase;
-  font-weight: 400;
   color: #4d4d4d;
 }
 
 nav>ul>li>a:hover, nav>ul>li>a:focus {
-  padding: 0 24px;
   text-transform: lowercase;
   font-weight: 700;
   color: #4d4d4d;
 }
 
 nav>ul>li>a:active {
-  padding: 0 24px;
   text-transform: lowercase;
   font-weight: 700;
   color: #4d4d4d;
@@ -156,18 +150,10 @@ nav>ul>li>a:active {
 .row {
   margin: 40px 0;
   /* 40px top and bottom, 0 left and right */
-  border-bottom: 2px solid: #4d4d4d
-}
-
-
-
-#hero h1 {
-  text-align: center;
-  /* Centers text */
 }
 
 .logo {
-  max-width: 120px;
+  max-width: 56px;
 }
 
 #hero {
@@ -175,15 +161,29 @@ nav>ul>li>a:active {
   padding: 0px 0px 0px 0px;
   display: inline-block;
   width: 100%;
+  text-align: center;
+}
+
+#hero span {
+  display: block;
+}
+
+.copyright {
+  font-size: 0.8em;
+}
+
+.backtotop {
+  display: inline-block;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 /* =================Header Main Footer=================== */
-
 header {
   background-color: #fffae2;
-  padding: 0px 0px 0px 0px;
+  padding-top: 16px;
   margin: 0px auto;
-  text-align: center;
+  text-align: unset;
   box-shadow: 2px 2px 2px rgba(77, 77, 77, 0.20);
   position: fixed;
   width: 100%;
@@ -191,12 +191,63 @@ header {
 
 footer {
   background-color: #fffae2;
-  padding: 0px 0px 0px 0px;
-  margin: 0px auto;
+  padding: 40px 0 24px;
   text-align: center;
-  width: 100%;
 }
 
 main {
-  padding-top: 184px;
+  padding-top: 144px;
 }
+
+/* ========Medium devices (640px and larger)======================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 24px 0 24px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 8px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 24px 24px 0px 0px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #about-page h3 {
+    margin-top: 0;
+  }
+}
+
+/* ========Large devices (1024px and larger)======================= */
+@media only screen and (min-width: 1024px) {
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* ========X-large devices (1440px and larger)======================= */
+@media only screen and (min-width: 1440px) {}
