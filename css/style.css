@@ -89,12 +89,13 @@ a:active {
   border-radius: 4px;
   border-bottom: 2px solid #E3C841;
   /* width of the border, type, color */
-  transition: 0.2s opacity;
+  transition: 0.5s opacity;
 }
 
 .button:hover {
-  color: #fafafa;
-  /* soft black */
+  color: #4d4d4d;
+  font-weight: 700;
+  opacity: 0.7;
   text-decoration: none;
 }
 
@@ -176,6 +177,13 @@ nav>ul>li>a:active {
   display: inline-block;
   margin-top: 32px;
   margin-bottom: 32px;
+  margin-left: 16px;
+}
+
+.berlin-illustration {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 /* =================Header Main Footer=================== */
@@ -183,7 +191,7 @@ header {
   background-color: #fffae2;
   padding-top: 16px;
   margin: 0px auto;
-  text-align: unset;
+  text-align: center;
   box-shadow: 2px 2px 2px rgba(77, 77, 77, 0.20);
   position: fixed;
   width: 100%;
@@ -251,3 +259,31 @@ main {
 
 /* ========X-large devices (1440px and larger)======================= */
 @media only screen and (min-width: 1440px) {}
+
+  /* =================Keyframes=================== */
+
+  @keyframes color-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
+}
+.sun {
+  animation: 3s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(500px,50px);}
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 30s cloud-move-reverse infinite alternate linear;
+}
