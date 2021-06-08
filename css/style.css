@@ -317,6 +317,14 @@ main {
   padding: 48px 224px;
 }
 
+.story {
+  margin-top: 8px;
+}
+
+.col-md-6 h4 {
+  margin-top: 16px;
+}
+
 }
 
 /* ========X-large devices (1440px and larger)======================= */
