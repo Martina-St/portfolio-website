@@ -207,12 +207,7 @@ nav>ul>li>a:active {
   position: relative;
 }
 
-.navtoggle li .icon {
-  position: absolute;
-  right: 0;
-  top: 2px;
-  font-size: 20px;
-}
+
 
 /* =================Header Main Footer=================== */
 header {
