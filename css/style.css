@@ -1,28 +1,28 @@
 /*
 Colors used:
-Primary Color (yellow): #ffe356;
-Soft yellow: #fffae2
-Secondary Color (coral red): #ef6367;
+Primary Color (yellow): #FFE353;
+Hero and footer #FEF6FF
+
 Copy Color (soft black): #4d4d4d;
-Not so clean white: #fafafa
+clean white: #ffffff
 */
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-color: #fafafa;
+  background-color: #fff;
   font-family: 'Jost', sans-serif;
   font-size: 18px;
-  /* Sets the font size to 16px */
   font-weight: 400;
-  /* Sets the font weight to 300 */
   line-height: 1.6;
-  /* Sets the line-height to 1.6 * the font-size */
-  color: #333333;
+  color: #333;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   line-height: 1.2;
   font-family: 'Barlow Semi Condensed', sans-serif;
 }
@@ -33,7 +33,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2.00em;
+  font-size: 2em;
   font-weight: 600;
 }
 
@@ -54,40 +54,40 @@ img {
 /* =================Links and Buttons=================== */
 a {
   color: #4d4d4d;
+  background-color: inherit;
 }
 
 a:visited {
-  /* visited link */
   color: #4d4d4d;
-  /* purple */
+  background-color: inherit;
 }
 
 a:hover,
 a:focus {
   color: #4d4d4d;
+  background-color: inherit;
 }
 
 a:active {
   color: #4d4d4d;
+  background-color: inherit;
 }
 
 .button {
   display: inline-block;
-  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #F78341;
+  background-color: #ffe353;
   color: #4d4d4d;
-  /* needed to override the default link color */
   font-weight: 400;
   padding: 8px 24px;
-  border-radius: 4px;
-  border-bottom: 3px solid #D4682B;
-  /* width of the border, type, color */
+  border-radius: 8px;
+  border-bottom: 2px solid #f3cf0e;
   transition: 0.5s opacity;
   text-decoration: none;
 }
 
 .button:hover {
   color: #4d4d4d;
+  background-color: #ffe353;
   font-weight: 700;
   opacity: 0.7;
   text-decoration: none;
@@ -105,35 +105,40 @@ a:active {
   color: #fafafa;
 }
 
-nav>ul {
+nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0.5em 0 0;
 }
 
-nav>ul>li>a {
+nav > ul > li > a {
   padding: 0 24px;
   text-transform: lowercase;
   text-decoration: none;
   color: #4d4d4d;
+  background-color: inherit;
 }
 
-nav>ul>li>a:visited {
+nav > ul > li > a :visited {
   text-transform: lowercase;
   color: #4d4d4d;
+  background-color: inherit;
 }
 
-nav>ul>li>a:hover, nav>ul>li>a:focus {
+nav > ul > li > a :hover,
+nav > ul > li > a :focus {
   text-transform: lowercase;
-  text-decoration: underline;
+  text-decoration: none;
   font-weight: 700;
   color: #4d4d4d;
+  background-color: inherit;
 }
 
-nav>ul>li>a:active {
+nav > ul > li > a :active {
   text-transform: lowercase;
   font-weight: 700;
   color: #4d4d4d;
+  background-color: inherit;
 }
 
 /* =================Layout Styling=================== */
@@ -143,17 +148,17 @@ nav>ul>li>a:active {
 
 .row {
   margin: 40px 0;
-  /* 40px top and bottom, 0 left and right */
 }
 
 .logo img {
   max-width: 56px;
-  padding-top: 8px;
+  padding-top: 16px;
 }
 
 #hero {
-  background-color: #FDE9DD;
-  padding: 0px 0px 0px 0px;
+  color: inherit;
+  background-color: #fef6ff;
+  padding-top: 24px;
   display: inline-block;
   width: 100%;
   text-align: center;
@@ -165,7 +170,7 @@ nav>ul>li>a:active {
 
 .copyright {
   font-size: 0.8em;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .backtotop {
@@ -200,7 +205,8 @@ nav>ul>li>a:active {
   display: none;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
@@ -212,48 +218,44 @@ nav>ul>li>a:active {
 }
 
 .navtoggle li .menuicon {
-  padding-top: 20px;
+  padding-top: 32px;
   padding-right: 16px;
-
 }
 
 nav > ul {
   list-style-type: none;
-  padding: 0;
-  margin: 0;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
 }
-
 
 .navtoggle.responsive nav {
-
   text-align: center;
 }
-.navtoggle.responsive li  {
-  display: block;
+
+.navtoggle.responsive li {
   padding: 12px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
 /* =================Header Main Footer=================== */
 header {
-  background-color: #F78341;
+  background-color: #ffe353;
   padding: 10px 0;
-  margin: 0px auto;
-  box-shadow: 2px 2px 2px rgba(77, 77, 77, 0.20);
+  margin: 0 auto;
+  box-shadow: 2px 2px 2px rgba(77, 77, 77, 0.2);
   position: fixed;
   width: 100%;
 }
 
 footer {
-  background-color: #FDE9DD;
+  color: inherit;
+  background-color: #fef6ff;
   padding: 40px 0 24px;
   text-align: center;
 }
@@ -284,7 +286,7 @@ main {
   }
 
   .skills-tools h2 {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .skills-tools h3 {
@@ -301,7 +303,7 @@ main {
 
   [class*="col-"] {
     float: left;
-    padding: 8px 24px 0px 0px;
+    padding: 8px 24px 0 0;
   }
 
   .row::after {
@@ -310,7 +312,7 @@ main {
     display: table;
   }
 
-  nav>ul {
+  nav > ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -321,25 +323,25 @@ main {
   }
 
   #work h3 {
-    margin-top: 0px;
+    margin-top: 0;
   }
 
   .logo img {
     max-width: 56px;
+    padding-top: 12px;
   }
 
   nav > ul {
-  margin: 1em 0;
-}
+    margin: 1em 0;
+  }
 
-.navtoggle li:not(:last-child) {
-  display: inline-block;
-}
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
 
-.navtoggle li:last-child {
-  display: none;
-}
-
+  .navtoggle li:last-child {
+    display: none;
+  }
 }
 
 /* ========Large devices (desktop) (1024px and larger)======================= */
@@ -382,7 +384,6 @@ main {
 
 /* ========X-large devices (1440px and larger)======================= */
 @media only screen and (min-width: 1440px) {
-
   /* =================Keyframes=================== */
   @keyframes color-change {
     from {

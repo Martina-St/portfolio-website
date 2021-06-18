@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="86px" height="86px" viewBox="0 0 86 86" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <title>logo_notthefinaloneyet</title>
-    <g id="logo_notthefinaloneyet" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <circle id="Oval" fill="#4D4D4D" cx="43" cy="43" r="43"></circle>
-        <text id="M" font-family="BarlowSemiCondensed-Medium, Barlow Semi Condensed" font-size="40" font-weight="400" letter-spacing="1.25" fill="#FFFAE2">
-            <tspan x="30" y="59">M</tspan>
-        </text>
+    <defs>
+        <path d="M35.72,59 C35.9866667,59 36.12,58.8666667 36.12,58.6 L36.12,58.6 L36.12,36.88 C36.12,36.8 36.1466667,36.7466667 36.2,36.72 C36.2533333,36.6933333 36.2933333,36.72 36.32,36.8 L36.32,36.8 L41.68,46 C41.8133333,46.1866667 41.9733333,46.28 42.16,46.28 L42.16,46.28 L42.6,46.28 C42.7866667,46.28 42.9466667,46.1866667 43.08,46 L43.08,46 L48.4,36.76 C48.4266667,36.68 48.4666667,36.6533333 48.52,36.68 C48.5733333,36.7066667 48.6,36.76 48.6,36.84 L48.6,36.84 L48.6,58.6 C48.6,58.8666667 48.7333333,59 49,59 L49,59 L51.04,59 C51.3066667,59 51.44,58.8666667 51.44,58.6 L51.44,58.6 L51.44,31.4 C51.44,31.1333333 51.3066667,31 51.04,31 L51.04,31 L48.96,31 C48.7733333,31 48.6133333,31.0933333 48.48,31.28 L48.48,31.28 L42.52,41.56 C42.4933333,41.5866667 42.4533333,41.6 42.4,41.6 C42.3466667,41.6 42.3066667,41.5866667 42.28,41.56 L42.28,41.56 L36.24,31.28 C36.1066667,31.0933333 35.9466667,31 35.76,31 L35.76,31 L33.68,31 C33.4133333,31 33.28,31.1333333 33.28,31.4 L33.28,31.4 L33.28,58.6 C33.28,58.8666667 33.4133333,59 33.68,59 L33.68,59 L35.72,59 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="logo_notthefinaloneyet" fill-rule="nonzero">
+            <circle id="Oval" fill="#4D4D4D" cx="43" cy="43" r="43"></circle>
+            <g id="M">
+                <use fill="#000000" xlink:href="#path-1"></use>
+                <use fill="#FFFAE2" xlink:href="#path-1"></use>
+            </g>
+        </g>
     </g>
 </svg>
