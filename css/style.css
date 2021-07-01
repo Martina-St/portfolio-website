@@ -152,7 +152,7 @@ nav > ul > li > a :active {
 
 .logo img {
   max-width: 56px;
-  padding-top: 16px;
+  padding-top: 12px;
 }
 
 #hero {
@@ -212,14 +212,14 @@ nav > ul > li > a :active {
 
 .navtoggle li .menuicon {
   position: absolute;
-  right: 0;
-  top: 2px;
+  right: 12px;
+  top: 30px;
   font-size: 20px;
 }
 
 .navtoggle li .menuicon {
-  padding-top: 32px;
-  padding-right: 16px;
+  padding-top: 0;
+  padding-right: 0;
 }
 
 nav > ul {
@@ -243,10 +243,14 @@ nav > ul {
   padding: 0 0 10px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* =================Header Main Footer=================== */
 header {
   background-color: #ffe353;
-  padding: 10px 0;
+  padding: 0;
   margin: 0 auto;
   box-shadow: 2px 2px 2px rgba(77, 77, 77, 0.2);
   position: fixed;
@@ -268,7 +272,7 @@ main {
 @media only screen and (min-width: 641px) {
   header {
     text-align: unset;
-    padding: 12px 0 4px;
+    padding: 0;
   }
 
   nav {
@@ -383,7 +387,7 @@ main {
 }
 
 /* ========X-large devices (1440px and larger)======================= */
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1440px) {}
   /* =================Keyframes=================== */
   @keyframes color-change {
     from {
@@ -426,4 +430,3 @@ main {
   .cloud-back {
     animation: 30s cloud-move-reverse infinite alternate linear;
   }
-}
