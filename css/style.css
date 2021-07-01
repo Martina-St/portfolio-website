@@ -157,7 +157,7 @@ nav > ul > li > a :active {
 
 #hero {
   color: inherit;
-  background-color: #fef6ff;
+  background-color: #fffaff;
   padding-top: 24px;
   display: inline-block;
   width: 100%;
@@ -259,7 +259,7 @@ header {
 
 footer {
   color: inherit;
-  background-color: #fef6ff;
+  background-color: #fffaff;
   padding: 40px 0 24px;
   text-align: center;
 }
